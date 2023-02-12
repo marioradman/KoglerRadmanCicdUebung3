@@ -3,7 +3,7 @@
 require('dotenv').config();
 
 // set port with Environment variable "SERVER_PORT" or use 8080 as default.
-const PORT = process.env.SERVER_PORT || 8080;
+const PORT = process.env.SERVER_PORT || 8282;
 // set runtime environment to switch between logic, depending on environment (production, development, ...). See ../notes/model.js
 const NODE_ENV = process.env.NODE_ENV || 'development';
 

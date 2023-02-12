@@ -21,8 +21,10 @@ app.get('/', (req, res) => {
 app.use('/greetings', greetingsRouter);
 
 
-app.listen(PORT, () => {
-  console.log(`Server is up an running on http://localhost:${PORT}`);
-});
+if(!module.parent){
+  app.listen(process.env.PORT, () => {
+    console.log(`Server is up an running on http://localhost:${PORT}`);
+  });
+}
 
 module.exports = app; // export express app

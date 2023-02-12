@@ -1,5 +1,8 @@
 version: '3.8'
 
+volumes:
+  test_volume: { }
+
 services:
   database-server:
     # using .env file to configure e.g. version number or other currently static variables
@@ -49,7 +52,7 @@ services:
       database-server:
         condition: service_healthy
     ports:
-      - "8080:8181"
+      - "8080:8282"
     environment:
       SERVER_PORT: 8181
       DB_SERVER: database-server

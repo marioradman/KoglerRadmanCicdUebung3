@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node .",
-    "test": "mocha test/*.js --exit"
+    "test": "mocha test/*.js --timeout 10000 --exit"
   },
   "contributors": [
     {
