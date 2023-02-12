@@ -1,13 +1,9 @@
 version: '3.8'
 
-volumes:
-  test_volume: { }
-
-
 services:
   database-server:
     # using .env file to configure e.g. version number or other currently static variables
-    image: mysql:8.0
+    image: mysql:${MYSQL_VERSION}
     container_name: contdel-db-server
     restart: always
     # setting environment variables is possible within docker-compose.yml

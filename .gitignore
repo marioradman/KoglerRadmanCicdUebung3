@@ -1,6 +1,6 @@
+.env
+**/*.db
 node_modules
 .vscode
 .idea
-.env
-**/*.db
 /mysql-data
