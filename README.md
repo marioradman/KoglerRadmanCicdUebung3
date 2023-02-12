@@ -41,3 +41,23 @@ Repo wurde gecloned und mit `docker compose up` gestartet.
 Es macht ein paar Probleme, weshalb alte images vorab gelöscht werden mussten.
 
 ![](docs/img/e3_2_1.png)
+
+FEHLERBEHEBUNG:
+Möglich durch Änderung der ports in den dockerfiles/node-files. Die Ports haben sich nämlich überlappt.
+
+# Übungsteil 3 - Github Workflow Erweitern
+
+[Zusätzlicher Workflow wurde erstellt](.github/workflows/ciExc3.yml), entsprechend der Angabe.
+
+![](docs/img/e3_3.png)
+
+# Übungsteil 4 - Gegenseitiges Testen
+
+Wurde durchgeführt auf mehreren Maschinen:
+- 2x Windows
+- 1x Mac
+
+Auf den Windows PCs gab es jedes Mal das Problem, dass docker-compose nicht sofort funktioniert hat.
+Stattdessen mussten zuerst images und container gelöscht werden.
+
+Am Mac hat es (aus unbekannten Gründen, eventuell weil Docker komplett sauber neu installiert war) keine Probeleme gegeben.

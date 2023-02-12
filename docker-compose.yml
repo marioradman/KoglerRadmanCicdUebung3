@@ -52,7 +52,7 @@ services:
       database-server:
         condition: service_healthy
     ports:
-      - "8080:8282"
+      - "8080:8181"
     environment:
       SERVER_PORT: 8181
       DB_SERVER: database-server
